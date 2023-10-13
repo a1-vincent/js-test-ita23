@@ -8,9 +8,14 @@
  * // person might be { name: 'John Doe', age: 30, city: 'New York' }
  */
 function createPersonObject() {
-    
+    const peopleJohn = {
+        name: "John Doe",
+        age: 30,
+        city: "New york"
+    };
+    return peopleJohn
 }
-
+createPersonObject(peopleJohn)
 
 /**
  * This function returns the name of the given person object.
@@ -23,8 +28,17 @@ function createPersonObject() {
  * // personName will be 'John Doe'
  */
 function getPersonName(person) {
-
+    const person1 = {
+        people:
+            {
+                person: 'John Doe',
+                age: 30,
+                city: 'New York'
+            }
+    }
+    return getPersonName()
 }
+
 
 
 /**
@@ -39,10 +53,22 @@ function getPersonName(person) {
  * console.log(john); // Outputs { name: 'John Doe', age: 30 }
  *
  */
-function findPersonByName(persons, name) {
-
+/*function findPersonByName(persons, name) {
+    const personName = {
+        people: [
+            {
+                name: 'John Doe',
+                age: 30,
+            },
+            {
+             name: 'Jane',
+             age: 25
+            }
+        ]
+    }
+    return name
 }
-
+findPersonByName()*/
 
 /**
  * This function calculates the total age of all persons in an array.

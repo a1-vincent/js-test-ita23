@@ -9,8 +9,9 @@
  * const anotherResult = isEven(7); // anotherResult will be false
  */
 
-function isEven(number) {
-    
+function isEven(n) {
+    n = Number(n);
+    return n === 0 || !!(n && !(n%2))
 }
 
 /**
@@ -27,9 +28,10 @@ function isEven(number) {
  */
 
 function isWithinRange(n, min, max) {
-
+    return n >= min && n <= max
 }
-
+const inRange = isWithinRange(5, 1, 10); // inRange will be true
+const outOfRange = isWithinRange(15, 1, 10); // outOfRange will be false
 /**
  * This function checks if a string contains the string "ba"
  *
@@ -43,9 +45,10 @@ function isWithinRange(n, min, max) {
  */
 
 function stringContainsBa(string) {
-
+    return string.includes("ba")
 }
-
+const bananaContainsBa = stringContainsBa("banana"); // true
+const harborContainsBa = isWithinRange("harbor"); // false
 
 
 

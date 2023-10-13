@@ -8,8 +8,11 @@
  * console.log(coolestTeacher); // Benjamin
  */
 function getCoolestTeacher() {
+    return "Benjamin"
 
 }
+
+console.log(getCoolestTeacher())
 
 /**
  * This function multiplies two numbers and then adds a third number.
@@ -24,8 +27,10 @@ function getCoolestTeacher() {
  * const anotherResult = multiplyAndAdd(-1, 1, 2); // anotherResult will be 1
  */
 function multiplyAndAdd(a, b, c) {
-
+    return (a * b) + c
 }
+
+console.log(multiplyAndAdd((2 * 3) + 1 ))
 
 /**
  * This function returns the type of the provided variable.
@@ -38,8 +43,10 @@ function multiplyAndAdd(a, b, c) {
  * const anotherResult = determineType(42); // anotherResult will be "number"
  */
 function determineType(value) {
-
+    return typeof(value)
 }
+
+determineType("hello")
 
 /**
  * This function concatenates two strings with a space in between.
@@ -53,9 +60,10 @@ function determineType(value) {
  */
 
 function concatenateStringsWithSpace(a, b) {
+    return `${a}, " ", ${b}`
 
 }
-
+const result = concatenateStringsWithSpace("Hello", "World")
 
 /**
  * This function converts a string to uppercase and adds a smiley at the end of the string
@@ -71,6 +79,13 @@ function concatenateStringsWithSpace(a, b) {
  */
 
 function toUpperCaseWithSmiley(str) {
-    
-}
+    return str.toUpperCase();
 
+}
+const upper = toUpperCaseWithSmiley('hello');
+console.log(upper); // upper will be 'HELLO:)'
+
+/*
+const string = str.toUpperCase();
+const smileyFace = str.endsWith(":)")
+console.log(string);*/
